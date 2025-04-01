@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neighborhood Survey</title>
+</head>
+<body>
+    <h1>Neighborhood Survey</h1>
+    <form action="survey.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Full Name" required>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+        <br>
+
+        <label for="neighborhood">Neighborhood:</label>
+        <input type="text" name="neighborhood" id="neighborhood" required>
+        <br>
+        <label for="overall">Rate overall satisfaction:</label>
+        <select name="overall" id="overall" required>
+            <option value="5">5</option>
+            <option value="4">4</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="1">1</option>
+        </select>
+        <br>
+        <label for="cleanliness">Rate cleanliness:</label>
+        <select name="cleanliness" id="cleanliness" required>
+            <option value="5">5</option>
+            <option value="4">4</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="1">1</option>
+        </select>
+        <br>
+        <label for="Walkability">Rate Walkability:</label>
+        <select name="Walkability" id="Walkability" required>
+            <option value="5">5</option>
+            <option value="4">4</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="1">1</option>
+        </select>
+        <br>
+        <label for="safety">Rate safety:</label>
+        <select name="safety" id="safety" required>
+            <option value="5">5</option>
+            <option value="4">4</option>
+            <option value="3">3</option>
+            <option value="2">2</option>
+            <option value="1">1</option>
+        </select>
+        <br>
+        <label for="Events">Events I would love to see in our neighborhood:</label>
+            <br><input type="checkbox" name="Events[]" value="Food Trucks">Food Trucks
+            <br><input type="checkbox" name="Events[]" value="Outdoor Movie Night">Outdoor Movie Night
+            <br><input type="checkbox" name="Events[]" value="Farmers Market">Farmers Market
+            <br><input type="checkbox" name="Events[]" value="Concerts">Concerts
+            <br><input type="checkbox" name="Events[]" value="Art Shows">Art Shows
+            <br><input type="checkbox" name="Events[]" value="Dancing">Dancing
+        <br><label for="pros">What do you love about our neighborhood?</label>
+        <br><textarea name="pros" id="pros" cols="30" rows="3"></textarea>
+        <br><label for="cons">What do you wish could be improved upon?</label><br><textarea name="cons" id="cons" cols="30" rows="3"></textarea>
+        <br><label for="comments">Any additional comments or thoughts:</label>
+        <br><textarea name="comments" id="comments" cols="30" rows="5"></textarea>
+        <br>
+        <button type="submit" value="Submit">Submit</button>
+    </form>
+
+
+    </body>
+</html>
